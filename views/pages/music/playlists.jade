@@ -1,0 +1,11 @@
+musicmenu.menu
+
+div#music.page(data-ng-init="init('playlists')")
+	div#playlists.page-content.container-fluid
+		h1 Playlists
+		//div.row.header
+			div.col-xs-12
+					span Name
+		div.row(ng-repeat="playlist in playlists")
+			div.col-xs-12(data-ng-click="loadPlaylist(playlist)")
+				span {{playlist}}

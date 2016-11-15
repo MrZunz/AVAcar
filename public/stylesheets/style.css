@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+header nav.navbar {
+  height: 50px;
+  line-height: 50px;
+  /*background-color: rgba($primary-color-2, 1);*/
+  background-color: #2c2e30;
+  color: white;
+  margin: 0px;
+  border: 0;
+}
+
+header nav.navbar .navbar-header {
+  height: 50px;
+}
+
+header nav.navbar .navbar-header .navbar-brand {
+  padding: 0px;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  letter-spacing: -9px;
+  width: 55px;
+}
+
+header nav.navbar .navbar-header button {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  border: 0;
+  text-align: center;
+}
+
+header nav.navbar .navbar-header button span {
+  background-color: #fff;
+}
+
+header nav.navbar #navbar ul {
+  margin-left: 15px;
+  text-align: center;
+}
+
+header nav.navbar #navbar ul li {
+  width: 70px;
+}
+
+header nav.navbar #navbar ul li a {
+  padding: 0px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 35px;
+}
+
+header nav.navbar #navbar ul li a:hover,
+header nav.navbar #navbar ul li a:focus {
+  background-color: #296952;
+  color: #fff;
+}
+
+header nav.navbar #navbar ul li.time {
+  font-size: 25px;
+}
+
+header nav.navbar #navbar ul li.active {
+  background-color: #296952;
+}
+
+header nav.navbar #navbar.in ul.menu-items {
+  background-color: #2c2e30;
+}
+
+footer #footer {
+  height: 60px;
+  line-height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer #footer .footer-content {
+  background-color: #2c2e30;
+}
+
+footer #footer .progressbar {
+  background-color: rgba(41, 105, 82, 0.75);
+  height: 10px;
+  border: 0px;
+}
+
+footer #footer .progressbar .ui-slider-range {
+  background-color: #296952;
+  border-radius: 0;
+}
+
+footer #footer .progressbar .ui-slider-handle {
+  outline: none;
+  border: 0px;
+  border-radius: 0px;
+  transition: left 1.25s;
+}
+
+footer #footer .controls {
+  text-align: center;
+  font-size: 35px;
+  height: 50px;
+}
+
+footer #footer .controls i {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+footer #footer .other-controls {
+  text-align: center;
+  font-size: 25px;
+}
+
+footer #footer .other-controls i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer #footer .current-song-info .artist-art {
+  float: left;
+}
+
+footer #footer .current-song-info .artist-art img {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+footer #footer .current-song-info .song-info {
+  float: left;
+  margin-left: 20px;
+  height: 50px;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+footer #footer .current-song-info .song-info span {
+  line-height: 25px;
+  height: 25px;
+  float: left;
+  clear: left;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#volume {
+  position: absolute;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  bottom: 60px;
+}
+
+#volume .volume-control {
+  height: 60px;
+  background-color: rgba(44, 46, 48, 0.75);
+}
+
+#volume .volume-control .progressbar {
+  height: 60px;
+  background-color: rgba(44, 46, 48, 0.75);
+  text-align: center;
+}
+
+#volume .volume-control .progressbar .ui-slider-range {
+  background-color: rgba(33, 87, 67, 0.5);
+}
+
+#volume .volume-control .progressbar .ui-slider-handle {
+  height: 60px;
+  display: none;
+}
+
+#volume .volume-control .progressbar .amount {
+  position: inherit;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+}
+
+#music .row span {
+  line-height: 45px;
+  height: 45px;
+  float: left;
+  clear: left;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#music .row.active {
+  background-color: #296952;
+}
+
+#music .row.header {
+  background-color: rgba(44, 46, 48, 0.5);
+  font-weight: bold;
+}
+
+#music #lyrics {
+  margin-bottom: 75px;
+}
+
+#music #lyrics .row span {
+  font-size: 25px;
+  height: 75px;
+  line-height: 75px;
+}
+
+#music #lyrics .row.active span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#car h1 {
+  font-size: 75px;
+}
+
+#car h3 {
+  font-size: 30px;
+}
+
+#car small {
+  color: #296952;
+}
+
+#main input, #main button {
+  color: #000;
+}
+
+#content {
+  perspective: 1200px;
+}
+
+#content #map {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform: rotateX(60deg);
+  padding-bottom: 0px;
+}
+
+#content #map * {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#content #map .leaflet-control-attribution {
+  display: none;
+}
+
+#content #map .leaflet-container {
+  background: none;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #296952;
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  padding-bottom: 60px;
+  display: block;
+}
+
+a, a:hover, a:focus {
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.background {
+  background-color: #1f2324;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.grid {
+  background-image: url("/images/grid.png");
+  background-position: left top;
+  background-size: initial;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+
+.grid.points {
+  background-image: url("/images/grid_point.png");
+}
+
+#content {
+  display: block;
+  height: 100%;
+  padding-top: 50px;
+}
+
+#content .menu {
+  width: 100%;
+  position: static;
+  top: -50px;
+  overflow: visible;
+}
+
+#content .page {
+  height: 100%;
+  display: block;
+  padding-bottom: 60px;
+  overflow: hidden;
+  background-color: rgba(44, 46, 48, 0.5);
+}
+
+#content .page .page-content {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+#content musicmenu {
+  z-index: 1;
+}
+
+#content #menu {
+  background-color: #296952;
+  color: #fff;
+  width: 100%;
+}
+
+#content #menu .container > div {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+#content #menu .menu-item {
+  text-shadow: 0px 0px 3px #000;
+  display: inline-block;
+}
+
+#content #menu .menu-item i {
+  font-size: 35px;
+  float: left;
+  margin-right: 10px;
+}
+
+#content #menu .menu-item span {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.iScrollVerticalScrollbar {
+  width: 10px;
+  border: 0;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  bottom: 0 !important;
+  top: 0 !important;
+}
+
+.iScrollVerticalScrollbar .iScrollIndicator {
+  background-color: rgba(41, 105, 82, 0.75) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */

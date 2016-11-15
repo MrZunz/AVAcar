@@ -1,0 +1,21 @@
+
+div#footer(ng-controller="footerController", data-ng-init="init()")
+	volume.animated
+	div.row#elapsed
+		div.progressbar
+	div.row.footer-content
+		div.col-md-4.col-xs-4.current-song-info
+				a(href="/music/lyrics").song-info
+					div.col-md-offset-2.col-xs-offset-0
+						span.song {{$root.currentSong.title}}
+						span.artist {{$root.currentSong.artist}}
+		div.col-md-4.col-xs-4
+			div.controls
+				i.ion-ios-rewind-outline.previous(data-ng-click="previous()")
+				i.ion-ios-play.play(data-ng-click="play()", ng-class="$root.musicStatus.state == 'play' ? 'hidden' : ''")
+				i.ion-ios-pause.pause(data-ng-click="pause()", ng-class="$root.musicStatus.state == 'play' ? '' : 'hidden'")
+				i.ion-ios-fastforward-outline.next(data-ng-click="next()")
+		div.col-md-4.col-xs-4
+			div.other-controls
+				i.ion-ios-shuffle.shuffle
+				i.ion-volume-medium.volume(data-ng-click="toggleShowVolumeControl()")

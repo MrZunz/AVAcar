@@ -1,0 +1,71 @@
+header {
+	
+
+	nav.navbar {
+		height: $navbar-height;
+		line-height: $navbar-height;
+		/*background-color: rgba($primary-color-2, 1);*/
+		background-color: $primary-color-3;
+		color: white;
+		margin: 0px;
+		border: 0;
+
+		.navbar-header {
+			height: $navbar-height;
+			.navbar-brand {
+				padding: 0px;
+				height: $navbar-height;
+				line-height: $navbar-height;
+				font-family: 'Poiret One', cursive;
+				font-size: 30px;
+				letter-spacing: -9px;
+				width: 55px;
+			}
+			button {
+				height: $navbar-height;
+				margin: 0;
+				padding: 0;
+				width: 70px;
+				border: 0;
+				text-align: center;
+
+				span {
+					background-color: $default-font-color;
+				}
+			}
+		}
+
+		#navbar {
+			ul {
+				margin-left: 15px;
+				text-align: center;
+
+				li {
+					width: 70px;
+					a {
+						padding: 0px;
+						height: $navbar-height;
+						line-height: $navbar-height;
+						font-size: 35px;
+					}
+					a:hover,
+					a:focus {
+						background-color: $primary-color-2;
+						color: $default-font-color;
+					}
+				}
+
+				li.time {
+					font-size: 25px;
+				}
+
+				li.active {
+					background-color: $primary-color-2;
+				}
+			}
+		}
+		#navbar.in ul.menu-items{
+			background-color: #2c2e30;
+		}
+	}
+}

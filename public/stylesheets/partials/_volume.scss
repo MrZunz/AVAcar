@@ -1,0 +1,36 @@
+#volume {
+	position: absolute;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	bottom: 60px;
+
+	.volume-control {
+		height: 60px;
+		background-color: rgba($primary-color-3, 0.75);
+
+		.progressbar {
+			height: 60px;
+			background-color: rgba($primary-color-3, 0.75);
+			text-align: center;
+
+			.ui-slider-range {
+				background-color: rgba(darken($primary-color-2, 5%), 0.5);
+
+			}
+
+			.ui-slider-handle {
+				height: 60px;
+				display: none;
+			}
+
+			.amount {
+				position: inherit;
+				color: white;
+				font-size: 20px;
+				z-index: 2;
+			}
+		}	
+	}
+	
+}

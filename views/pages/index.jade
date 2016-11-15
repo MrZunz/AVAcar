@@ -1,0 +1,11 @@
+div#main.page(data-ng-init="init()")
+	div.page-content.container-fluid.text-center
+		div.row.text-center
+			input(type="text", ng-model="about")
+			button(ng-click="think(about)") Think
+		div.row
+			div.col-xs-12.col-md-12
+				span#speech-output
+
+		div.row
+			div(ui-bar, type='type1')

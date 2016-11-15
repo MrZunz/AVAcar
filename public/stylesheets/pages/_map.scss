@@ -1,0 +1,27 @@
+#content {
+	perspective: 1200px;
+
+	#map {
+		-webkit-transform-style:preserve-3d;
+		transform-style:preserve-3d;
+		transform:rotateX(60deg);
+		padding-bottom: 0px;
+
+		* {
+			-webkit-transform-style:preserve-3d;
+			transform-style:preserve-3d;
+		}
+
+		.leaflet-control-attribution {
+			display: none;
+		}
+
+		.leaflet-container {
+			background:none;
+		}
+	}
+
+}
+
+
+

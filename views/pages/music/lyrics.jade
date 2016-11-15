@@ -1,0 +1,6 @@
+musicmenu.menu
+
+div#music.page(data-ng-init="init('lyrics')")
+	div#lyrics.page-content.container-fluid
+		div(ng-repeat="line in lyrics", ng-class="line.active == true ? 'active' : ''", class="row text-center {{$index}}")
+			span {{line.text}}

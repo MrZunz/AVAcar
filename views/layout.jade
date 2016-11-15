@@ -1,0 +1,57 @@
+doctype html
+html(ng-app="ava")
+  head
+    base(href="/")
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    
+    link(rel='stylesheet', href='/node_modules/angular-loading-bar/build/loading-bar.css')
+    link(rel='stylesheet', href='/javascripts/vendor/jquery-ui/themes/base/jquery-ui.css')
+    link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/animate.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css')
+    
+    script(src='/node_modules/socket.io/node_modules/socket.io-client/socket.io.js')
+    script(src='/node_modules/angular/angular.js')
+    script(src='/node_modules/angular-route/angular-route.js')
+    script(src='/node_modules/angular-animate/angular-animate.js')
+    script(src='/node_modules/angular-loading-bar/build/loading-bar.js')
+    script(src='/node_modules/iscroll/build/iscroll.js')
+    script(src='/node_modules/jquery/dist/jquery.js')
+    script(src='javascripts/vendor/jquery-ui/jquery-ui.js')
+    script(src='javascripts/vendor/socket.js')
+    script(src='javascripts/vendor/bootstrap.min.js')
+    script(src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js')
+
+    script(src='/javascripts/app.js')
+    script(src='javascripts/controllers/header.js')
+    script(src='javascripts/controllers/footer.js')
+    script(src='javascripts/controllers/main.js')
+    script(src='javascripts/controllers/music.js')
+    script(src='javascripts/controllers/car.js')
+    script(src='javascripts/controllers/map.js')
+    script(src='javascripts/services/music.js')
+    script(src='javascripts/services/volume.js')
+    script(src='javascripts/services/socket.js')
+    script(src='javascripts/services/car.js')
+    script(src='javascripts/services/intents.js')
+    script(src='javascripts/directives/header.js')
+    script(src='javascripts/directives/footer.js')
+    script(src='javascripts/directives/volume.js')
+    script(src='javascripts/directives/musicmenu.js')
+
+    script(src='javascripts/directives/actionFactory.js')
+    script(src='javascripts/directives/actions/weather.js')
+    
+  body
+    audio#tts(src='')
+    div.background
+    div.grid.hidden
+    header#header
+    ng-view#content
+    footer

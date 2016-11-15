@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import "variables";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/volume";
+@import "pages/music";
+@import "pages/car";
+@import "pages/main";
+@import "pages/map";
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: $primary-color-2;
+	color: white;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	// padding: 0px;
+	// margin: 0px;
+	font-family: 'Raleway', sans-serif;
+	color: $default-font-color;
+	
+	padding-bottom: $navbar-height + 10px;
+	display: block;
+	//text-shadow: 0px 0px 3px #000;
+}
+
+a, a:hover, a:focus {
+	color: $default-font-color;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.background {
+	background-color: #1f2324;
+	// background-image: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-317821.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -1;
+	-webkit-transition: background-image 0.5s ease-in-out;
+	transition: background-image 0.5s ease-in-out;
+}
+
+.grid
+{
+	background-image: url("/images/grid.png");
+	background-position: left top;
+	background-size: initial;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -1;
+}
+
+.grid.points 
+{
+	background-image: url("/images/grid_point.png");
+}
+
+#content {
+	display: block;
+	height: 100%;
+	padding-top: $navbar-height;
+
+	.menu {
+		width: 100%;
+		position: static;
+		top: -50px;
+    	overflow: visible;
+	}
+
+	.page {
+		height: 100%;
+		display: block;
+		padding-bottom: $navbar-height + 10px;
+		overflow: hidden;
+		background-color: rgba(44, 46, 48, 0.5);
+
+		//.ng-enter		{ animation: fadeIn  0.5s both ease-in; z-index: 8888; }
+		//.ng-leave		{ animation: fadeOut 0.5s both ease-in; z-index: 9999; }
+
+		.page-content {
+			// height: 100%;
+			display: block;
+			overflow: hidden;
+			padding-bottom: 50px;
+		}
+	}
+
+	musicmenu {
+		z-index: 1;
+	}
+
+	#menu {
+		//background-color: rgba(lighten($primary-color-2, 5%), 0.75);
+		background-color: $primary-color-2;
+		// background-color: lighten($primary-color-2, 10%);
+		color: $default-font-color;
+		width: 100%;
+
+		.container {
+			
+			> div {
+				height: $navbar-height;
+				line-height: $navbar-height;
+				overflow: hidden;
+			}
+		}
+
+		.menu-item {
+			
+			text-shadow: 0px 0px 3px #000;
+			display: inline-block;
+
+			i {
+				font-size: 35px;
+				float: left;
+				margin-right: 10px;
+			}
+			span {
+				display: inline-block;
+				text-transform: uppercase;
+    			font-weight: bold;
+			}
+		}
+	}	
+}
+
+.grayscale { 
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+
+.iScrollVerticalScrollbar {
+	width: 10px;
+	border: 0;
+	margin-top: $navbar-height + 50px;
+	margin-bottom: $navbar-height + 10px;
+	bottom: 0 !important;
+	top: 0 !important;
+
+	.iScrollIndicator {
+		// background-color: lighten($primary-color-2, 10%) !important;
+		background-color: rgba($primary-color-2, 0.75) !important;
+		border: 0 !important;
+		border-radius: 0 !important;
+		margin-bottom: $navbar-height + 10px;
+	}	
+}

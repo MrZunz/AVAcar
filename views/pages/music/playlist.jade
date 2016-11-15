@@ -1,0 +1,14 @@
+musicmenu.menu
+
+div#music.page(data-ng-init="init('playlist')")
+	div#playlist.page-content.container-fluid
+		h1(ng-show="$root.currentPlaylist != null") {{$root.currentPlaylist}}
+		h1(ng-show="$root.currentPlaylist == null") No playlist loaded
+
+		div.row(ng-repeat="song in playlist", data-ng-click="playSong(song)", ng-class="$root.currentSong.id == song.id ? 'active' : ''")
+			div.col-xs-4
+				span {{song.title}}
+			div.col-xs-3
+				span {{song.artist}}
+			div.col-xs-3
+				span {{song.album}}

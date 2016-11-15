@@ -1,0 +1,25 @@
+nav.navbar.navbar-fixed-top(ng-controller="headerController")
+	div.container
+		div.navbar-header
+			//button(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar").navbar-toggle.collapsed
+				span.src-only
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a(href="/").navbar-brand AVA
+		div#navbar.collapse.navbar-collapse
+			ul.nav.navbar-nav.menu-items
+				li.car(ng-class="getClass('/car')")
+					a(href="/car")
+						span.ion-speedometer
+				li.musicplayer(ng-class="getClass('/music')")
+					a(href="/music")
+						span.ion-ios-musical-notes
+				li.map(ng-class="getClass('/map')")
+					a(href="/map")
+						span.ion-ios-location-outline
+			ul.nav.nav-bar.navbar-right
+				li.time.right
+					span.hours.white {{time | date:'HH'}}
+					small :
+					span.minutes.white {{time| date:'mm'}}
